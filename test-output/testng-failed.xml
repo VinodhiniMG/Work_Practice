@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="ExtentReports.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="C:/Users/vmg/Work_Practice/src/test(failed)">
+    <classes>
+      <class name="Registration.TC_003_LoginDDTest">
+        <methods>
+          <include name="Tear_down"/>
+          <include name="VerifyloginDDT" invocation-numbers="3"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- Registration.TC_003_LoginDDTest -->
+    </classes>
+  </test> <!-- C:/Users/vmg/Work_Practice/src/test(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

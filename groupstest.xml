@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="3">
+
+    <groups>
+        <run>
+          <!--  <include name="Sanity"></include>-->
+          <include name="Regression"></include>
+           <!-- <include name="Master"></include>-->
+        </run>
+    </groups>
+    <listeners>
+        <listener class-name="ExtentReports.ExtentReportManager"></listener>
+    </listeners>
+    <test name="C:/Users/vmg/Work_Practice/src/test">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+         <class name="Registration.TC_001_Account_Registration"></class>
+            <class name="Registration.TC_002_LoginTest"></class>
+         <class name="Registration.TC_005_Verify_Product"></class>
+            <class name="Registration.TC_004_ExistinguserTest"></class>
+            <class name="Baseclasses.BaseClass"/>
+        </classes>
+    </test>
+</suite>
