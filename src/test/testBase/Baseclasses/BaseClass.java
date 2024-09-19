@@ -39,6 +39,7 @@ public class BaseClass  {
     @BeforeMethod
    @Parameters("browser")
  public void Setup(String browsertype) throws IOException {
+        WebDriverManager.chromedriver().setup();
         p= new Properties();
         FileInputStream fs= null;
         fs = new FileInputStream("config.properties");
