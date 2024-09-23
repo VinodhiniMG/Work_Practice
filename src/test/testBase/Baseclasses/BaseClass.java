@@ -42,7 +42,7 @@ public class BaseClass  {
    @Parameters("browser")
  public void Setup(String browsertype) throws IOException {
        // WebDriverManager.chromedriver().setup();
-      System.setProperty("webdriver.chrome.driver", "C:\\Users\\vmg\\Work_Practice\\drivers");
+      System.setProperty("webdriver.chrome.driver", "C:\\Users\\vmg\\Work_Practice\\drivers\\chromedriver.exe");
         p= new Properties();
         FileInputStream fs= null;
         fs = new FileInputStream("config.properties");
