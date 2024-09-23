@@ -1,6 +1,7 @@
 package Baseclasses;
 
 import ExtentReports.ExtentReportManager;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
