@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -26,7 +27,7 @@ import java.util.Properties;
 
 @Listeners({ExtentReportManager.class})
 public class BaseClass  {
-    public static WebDriver driver;
+    public static RemoteWebDriver driver;
     public Homepage hp;
     public Signuppage sp;
     public RegisterationPage rp;
@@ -41,7 +42,7 @@ public class BaseClass  {
    @Parameters("browser")
  public void Setup(String browsertype) throws IOException {
        // WebDriverManager.chromedriver().setup();
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\vmg\\Work_Practice\\drivers");
+      //  System.setProperty("webdriver.chrome.driver", "C:\\Users\\vmg\\Work_Practice\\drivers");
         p= new Properties();
         FileInputStream fs= null;
         fs = new FileInputStream("config.properties");
